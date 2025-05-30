@@ -35,6 +35,12 @@ To set up your CI/CD solution for Power BI, you'll need a **GitHub Organization 
 For a full and up-to-date list of permissions for each organization role, see the official [GitHub Docs: Permissions for organization roles](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#permissions-for-organization-roles).
 
 
+## 📦 How to Create a New Repository
+
+To create a new repository in your GitHub organization, go to [https://github.com](https://github.com), click your profile icon in the top-right corner, and select **Your organizations**. Choose your organization, then click the green **New** button on the **Repositories** tab. Enter a repository name, description (optional), and choose whether it will be **public** or **private**. You can also initialize it with a README file if you’d like. Finally, click **Create repository** to finish.
+
+
+
 ## 🔐 How to Give Access to Specific People for a Single Repository
 
 By default, organization members might have access to many repositories, but you can **limit access** and invite collaborators only to a specific repo:
