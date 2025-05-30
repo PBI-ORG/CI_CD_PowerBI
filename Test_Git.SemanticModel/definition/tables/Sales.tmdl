@@ -1,0 +1,33 @@
+table Sales
+	lineageTag: e8783538-6544-4e57-b91c-de5caea4aad2
+
+	column Product
+		dataType: string
+		lineageTag: 4b183372-2499-4402-828e-492344d44ada
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sales
+		dataType: int64
+		formatString: 0
+		lineageTag: 428935bc-0958-48f7-97c2-856bc259ba2f
+		summarizeBy: sum
+		sourceColumn: Sales
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sales = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WclTSUTI0UIrViVZyAjKNIExnINPUDMx0ATLNIUxXINMYqCAWAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Product = _t, Sales = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Product", type text}, {"Sales", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
