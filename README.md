@@ -35,3 +35,44 @@ To set up your CI/CD solution for Power BI, you'll need a **GitHub Organization 
 For a full and up-to-date list of permissions for each organization role, see the official [GitHub Docs: Permissions for organization roles](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#permissions-for-organization-roles).
 
 
+## 🔐 How to Give Access to Specific People for a Single Repository
+
+By default, organization members might have access to many repositories, but you can **limit access** and invite collaborators only to a specific repo:
+
+### Steps to Grant Access to a Specific Repository:
+
+1. **Go to the Repository**  
+   Navigate to the specific repository in your GitHub organization where you want to manage access.
+
+2. **Open Repository Settings**  
+   Click on the **Settings** tab at the top of the repository page.
+
+3. **Manage Access**  
+   In the left sidebar, click **Manage access** (sometimes under “Access” or “Collaborators & teams”).
+
+4. **Invite Collaborators or Teams**  
+   Click **Invite a collaborator** or **Add teams** (if you want to give access to a whole team).
+
+5. **Search and Select Users or Teams**  
+   Enter the GitHub username(s) or team name(s) you want to grant access to and select them.
+
+6. **Choose Permission Level**  
+   Select the permission level for each collaborator:
+   - **Read** — Can view and clone the repository.
+   - **Triage** — Can manage issues and pull requests.
+   - **Write** — Can push to the repository.
+   - **Maintain** — Can manage the repository without access to sensitive or destructive actions.
+   - **Admin** — Full control of the repository.
+
+7. **Send Invitation**  
+   Click **Send invitation** — the invited collaborators will get an email and must accept to gain access.
+
+---
+
+### Important Notes:
+
+- Only repository **owners and admins** can manage access.
+- Teams are the best way to manage permissions if you have multiple people needing the same access level.
+- Organization members without explicit access to a repository cannot see or contribute to it.
+
+
