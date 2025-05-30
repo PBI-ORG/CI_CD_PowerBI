@@ -29,3 +29,9 @@ To set up your CI/CD solution for Power BI, you'll need a **GitHub Organization 
 
 ✅ Your GitHub Organization is now created and ready for setting up your CI/CD solution!
 
+
+### 📌 Set up Organization Role Permissions
+
+For a full and up-to-date list of permissions for each organization role, see the official [GitHub Docs: Permissions for organization roles](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#permissions-for-organization-roles).
+
+
