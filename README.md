@@ -48,10 +48,10 @@ By default, organization members might have access to many repositories, but you
    Click on the **Settings** tab at the top of the repository page.
 
 3. **Manage Access**  
-   In the left sidebar, click **Manage access** (sometimes under “Access” or “Collaborators & teams”).
+   In the left sidebar, click **Collaborators & teams**.
 
 4. **Invite Collaborators or Teams**  
-   Click **Invite a collaborator** or **Add teams** (if you want to give access to a whole team).
+   In section **Manage access** select **Direct access** then Click **Add people** or **Add teams** (if you want to give access to a whole team).
 
 5. **Search and Select Users or Teams**  
    Enter the GitHub username(s) or team name(s) you want to grant access to and select them.
