@@ -1,0 +1,31 @@
+## 📦 Reset `main` to a Single Commit (Clean History)
+
+This guide explains how to wipe the entire commit history of your `main` branch and start fresh with a single commit, keeping the current project state.
+
+⚠️ **Warning:** This rewrites history! Anyone else working with this repository will need to re-clone or reset their local branches.
+
+---
+
+### 🛠️ Steps
+
+```bash
+# 1️⃣ Switch to the main branch
+git checkout main
+
+# 2️⃣ Create a new orphan branch (no history)
+git checkout --orphan temp-main
+
+# 3️⃣ Stage all files
+git add -A
+
+# 4️⃣ Create a new initial commit
+git commit -m "Initial commit with current project state"
+
+# 5️⃣ Delete the old main branch
+git branch -D main
+
+# 6️⃣ Rename temp-main to main
+git branch -m main
+
+# 7️⃣ Force push the new main to remote
+git push --force origin main
