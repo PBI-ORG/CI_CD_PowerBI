@@ -79,41 +79,5 @@ git push
 
 ---
 
-🔥 Resetting Branches and Squashing History
 
-👉 Create a single-commit fresh history on any branch
 
-1️⃣ Make sure you’re on the target branch:
-
-git checkout main   # or Dev/Test
-
-2️⃣ Create a new orphan branch (no history)
-
-git checkout --orphan temp-main   # or temp-dev/temp-test
-
-3️⃣ Add files to the new branch
-
-git add -A
-
-4️⃣ Commit all files as one commit
-
-git commit -m "Initial commit with current project state"
-
-5️⃣ Delete old branch
-
-git branch -D main  # or Dev/Test
-
-6️⃣ Rename temp branch to original
-
-git branch -m main  # or Dev/Test
-
-7️⃣ Force-push the new history (⚠️ destructive!)
-
-git push --force origin main  # or Dev/Test
-
-🚨 WARNING:
-This deletes all old commits on the branch. Anyone else working with this repo will need to reset or re-clone.
-
----
-
-🔒 Clean, linear, predictable history for everyone.
