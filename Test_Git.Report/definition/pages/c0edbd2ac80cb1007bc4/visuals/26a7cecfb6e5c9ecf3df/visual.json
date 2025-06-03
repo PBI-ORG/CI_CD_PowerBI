@@ -10,7 +10,7 @@
     "tabOrder": 1
   },
   "visual": {
-    "visualType": "areaChart",
+    "visualType": "donutChart",
     "query": {
       "queryState": {
         "Category": {
@@ -154,7 +154,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "708c0092472668b60dc0",
+        "name": "2894166d8a511a85cc7e",
         "field": {
           "Column": {
             "Expression": {
@@ -168,7 +168,7 @@
         "type": "Categorical"
       },
       {
-        "name": "adf005bfde1681ab0499",
+        "name": "58e2c0fa3c84ea57473d",
         "field": {
           "Aggregation": {
             "Expression": {
