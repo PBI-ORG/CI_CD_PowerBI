@@ -20,35 +20,35 @@ Dev → Test → Prod
 📦 Commands and Workflow
 
 ✅ Develop in Dev:
-
+```bash
 -git checkout Dev
 -Make your changes
 -git add .
 -git commit -m "Describe your changes"
 -git push
+```
 
----
+### 🚀 Move changes from Dev to Test (linear rebase):
 
-🚀 Move changes from Dev to Test (linear rebase):
+```bash
+git checkout Test
+git pull --rebase origin Test
+git rebase Dev
+git push
+```
 
--git checkout Test
--git pull --rebase origin Test
--git rebase Dev
--git push
-
----
 
 📦 Move changes from Test to Prod (linear rebase):
-
+```bash
 -git checkout Prod
 -git pull --rebase origin Prod
 -git rebase Test
 -git push
-
----
+```
 
 🔧 Feature Branch Workflow (Recommended):
 
+```bash
 -git checkout Dev
 -git checkout -b feature/my-new-feature
 -Do your work
@@ -57,8 +57,7 @@ Dev → Test → Prod
 -git checkout Dev
 -git rebase feature/my-new-feature
 -git push
-
----
+```
 
 📖 Notes:
 
