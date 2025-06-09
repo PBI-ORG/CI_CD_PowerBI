@@ -133,6 +133,57 @@ By default, organization members might have access to many repositories, but you
 - Organization members without explicit access to a repository cannot see or contribute to it.
 
 
+## 👥 Managing Teams and Repository Access in GitHub Organization
+
+This guide explains how to create teams in your GitHub organization and give them access to private repositories.
+
+### 📌 Prerequisites
+- You must be an **Organization Owner** or have **Admin** permissions.
+- You must be using a **GitHub Organization** (Free plan or higher).
+- The repository must already exist within the organization.
+
+---
+
+### 🛠️ Step 1: Create a Team
+
+1. Navigate to your GitHub organization homepage.
+2. Click on the **"Teams"** tab (left sidebar).
+3. Click **"New team"**.
+4. Enter a **team name** and an optional **description**.
+5. Click **"Create team"**.
+
+---
+
+### ➕ Step 2: Add Members to the Team
+
+1. Go to the team's page you just created.
+2. Click **"Add a member"**.
+3. Search for and select the users you want to add.
+4. Click **"Add"**.
+
+---
+
+### 🔐 Step 3: Grant Team Access to a Repository
+
+1. Still on the team's page, click the **"Repositories"** tab.
+2. Click **"Add a repository"**.
+3. Select the desired repository from the list.
+4. Choose the appropriate access level:
+   - **Read** – View code and issues.
+   - **Write** – Push code and manage issues/pull requests.
+   - **Admin** – Full control including settings and access.
+5. Click **"Add repository"**.
+
+---
+
+### ✅ Done!
+
+Your team now has the specified level of access to the repository. You can repeat this process for additional repositories or teams.
+
+> ℹ️ Tip: Use teams to simplify permission management across multiple repositories.
+
+
+
 ## 📥 Download and Install Visual Studio Code
 
 To work with this project, we recommend using [Visual Studio Code (VS Code)](https://code.visualstudio.com/), a free and powerful source-code editor.
