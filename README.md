@@ -242,6 +242,17 @@ Click the **Download** button for your operating system.
 2. Follow the installation wizard.
 3. ✅ Recommended: Keep default settings unless you have specific preferences.
 
+## 👤 Set Up Git Username and Email
+
+Before making commits, configure your Git identity:
+
+### 📌 Run these commands in **Git Bash**:
+
+```bash
+git config --global user.name "Your Full Name"
+git config --global user.email "your.email@example.com"
+```
+---
 
 ## 📂 Cloning the Repository Using Visual Studio Code
 
