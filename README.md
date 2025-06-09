@@ -182,7 +182,7 @@ Your team now has the specified level of access to the repository. You can repea
 
 > ℹ️ Tip: Use teams to simplify permission management across multiple repositories.
 
-
+---
 
 ## 📥 Download and Install Visual Studio Code
 
