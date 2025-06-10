@@ -1,3 +1,5 @@
+# CI/CD Solution for Power BI
+
 ## 📝 Create a Free GitHub Organization Account
 
 To set up your CI/CD solution for Power BI, you'll need a **GitHub Organization account**. Follow these steps to create one for free:
@@ -183,12 +185,13 @@ Your team now has the specified level of access to the repository. You can repea
 > ℹ️ Tip: Use teams to simplify permission management across multiple repositories.
 
 ---
+## Set up the necessary tools to manage the Repositories from Remote
 
-## 📥 Download and Install Visual Studio Code
+### 📥 Download and Install Visual Studio Code
 
 To work with this project, we recommend using [Visual Studio Code (VS Code)](https://code.visualstudio.com/), a free and powerful source-code editor.
 
-### 🔽 Step 1: Download
+#### 🔽 Step 1: Download
 
 Visit the official Visual Studio Code website:
 
@@ -196,14 +199,14 @@ Visit the official Visual Studio Code website:
 
 Click the **Download** button for your operating system
 
-### 🛠️ Step 2: Install
+#### 🛠️ Step 2: Install
 
 #### On Windows:
 1. Run the downloaded `.exe` file.
 2. Follow the setup instructions.
 3. ✅ Recommended: Select **"Add to PATH"** during installation.
 
-### 🧩 Step 3: Install VS Code Extensions
+#### 🧩 Step 3: Install VS Code Extensions
 
 To enhance your development experience, it's recommended to install the following Visual Studio Code extensions:
 
@@ -222,11 +225,11 @@ To install extensions:
 3. Search for each extension by name and click **Install**.
 
 
-## 🔧 Install Git
+### 🔧 Install Git
 
 Git is required to clone this repository and manage version control. Follow the steps below to install Git on your system.
 
-### 🔽 Step 1: Download Git
+#### 🔽 Step 1: Download Git
 
 Visit the official Git website:
 
@@ -235,18 +238,18 @@ Visit the official Git website:
 Click the **Download** button for your operating system.
 
 
-### 🛠️ Step 2: Install Git
+#### 🛠️ Step 2: Install Git
 
 #### On Windows:
 1. Run the downloaded `.exe` file.
 2. Follow the installation wizard.
 3. ✅ Recommended: Keep default settings unless you have specific preferences.
 
-## 👤 Set Up Git Username and Email
+### 👤 Set Up Git Username and Email
 
 Before making commits, configure your Git identity:
 
-### 📌 Run these commands in **Git Bash**:
+#### 📌 Run these commands in **Git Bash**:
 
 ```bash
 git config --global user.name "Your Full Name"
@@ -254,17 +257,17 @@ git config --global user.email "your.email@example.com"
 ```
 ---
 
-## 📂 Cloning the Repository Using Visual Studio Code
+### 📂 Cloning the Repository Using Visual Studio Code
 
 You can easily clone a repository to your local machine using Visual Studio Code. Follow these steps:
 
-### 🔗 Step 1: Copy the Repository URL
+#### 🔗 Step 1: Copy the Repository URL
 
 1. Go to the GitHub page of this repository.
 2. Click the green **Code** button.
 3. Copy the **HTTPS** URL (e.g., `https://github.com/your-username/your-repo.git`).
 
-### 💻 Step 2: Open VS Code and Clone
+#### 💻 Step 2: Open VS Code and Clone
 
 1. Open **Visual Studio Code**.
 2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS) to open the **Command Palette**.
@@ -272,7 +275,7 @@ You can easily clone a repository to your local machine using Visual Studio Code
 4. Paste the repository URL you copied earlier and press **Enter**.
 5. Choose a folder on your computer where the repository will be saved.
 
-### ✅ Step 3: Open the Project
+#### ✅ Step 3: Open the Project
 
 Once cloning is complete, VS Code will ask:
 
@@ -281,10 +284,10 @@ Once cloning is complete, VS Code will ask:
 Click **Open** to load the project in VS Code.
 
 ---
-# 📊 CI/CD PowerBI Git Branching Strategies
+## 📊 CI/CD PowerBI Git Branching Strategies
 
 This project uses 3 main branches:
-- Prod — live, production-ready state
+- main — live, production-ready state
 - Test — staging for QA and validation
 - Dev — active development
 
@@ -292,7 +295,7 @@ This project uses 3 main branches:
 
 ### 🔀 Branching Flow:
 
-Dev → Test → Prod
+Dev → Test → main
 
 - New features are developed in Dev.
 - Approved changes are moved to Test for QA.
@@ -300,10 +303,10 @@ Dev → Test → Prod
 
 ---
 
-## Different Merging Strategies ##
+### Different Merging Strategies 
 
 
-### Using Git Merge ###
+#### Using Git Merge 
 
 📦 Commands and Workflow
 
@@ -475,8 +478,6 @@ Squash commit keeps history linear but we lose teh fine details of individual fe
 | Prod    | Live, stable production  | git rebase Test            |
 
 ---
-
-
 
 
 | Merge Type               | Usage                                                | Command / GitHub Option            |
