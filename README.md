@@ -308,7 +308,7 @@ Avoids storing large binary .pbix files which aren't diff-friendly
 
 ![Pbip](https://github.com/user-attachments/assets/d1d9105b-1f48-48e4-84ac-a48d3e296388)
 
-
+---
 
 
 ## 📊 CI/CD PowerBI Git Branching Strategies
