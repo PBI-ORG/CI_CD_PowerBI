@@ -284,6 +284,33 @@ Once cloning is complete, VS Code will ask:
 Click **Open** to load the project in VS Code.
 
 ---
+
+## 📂 Organizing Power BI Files in the Repository
+To enable smooth integration of Power BI reports in our CI/CD pipeline, we recommend saving your Power BI project files using the Power BI Project (PBIP) format. This format breaks down your report into structured, source-control-friendly JSON files alongside the dataset and report definitions.
+
+📌 Why Use .pbip?
+Easier to track changes with Git
+
+Enables code review and versioning for report definitions
+
+Supports better collaboration and CI/CD automation
+
+Avoids storing large binary .pbix files which aren't diff-friendly
+
+📥 How to Save as PBIP
+1. In Power BI Desktop (from version December 2022+), go to File → Save As
+
+2. Select Power BI Project Files (*.pbip)
+
+3. Choose your project folder within the repository (if applicable)
+
+##### ℹ️  If you don't have the option for saving a Power BI file as .Pbip you should enable the following options from Power BI desktop:
+
+![Pbip](https://github.com/user-attachments/assets/d1d9105b-1f48-48e4-84ac-a48d3e296388)
+
+
+
+
 ## 📊 CI/CD PowerBI Git Branching Strategies
 
 This project uses 3 main branches:
