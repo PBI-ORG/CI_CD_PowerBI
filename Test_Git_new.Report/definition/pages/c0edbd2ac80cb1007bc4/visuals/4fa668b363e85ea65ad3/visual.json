@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "4fa668b363e85ea65ad3",
   "position": {
     "x": 0,
@@ -10,7 +10,7 @@
     "tabOrder": 0
   },
   "visual": {
-    "visualType": "barChart",
+    "visualType": "columnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -154,7 +154,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "193de795a7237361ed79",
+        "name": "7876e8c3b7c87b882b10",
         "field": {
           "Column": {
             "Expression": {
@@ -168,7 +168,7 @@
         "type": "Categorical"
       },
       {
-        "name": "7c9c98b292e0b61b695b",
+        "name": "d3ebac9d32ce572ebbe2",
         "field": {
           "Aggregation": {
             "Expression": {
