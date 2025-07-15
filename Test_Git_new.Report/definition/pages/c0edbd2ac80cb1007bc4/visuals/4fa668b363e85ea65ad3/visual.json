@@ -10,7 +10,7 @@
     "tabOrder": 0
   },
   "visual": {
-    "visualType": "columnChart",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
         "Category": {
@@ -154,7 +154,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "7876e8c3b7c87b882b10",
+        "name": "a1686815f438521352e0",
         "field": {
           "Column": {
             "Expression": {
@@ -168,7 +168,7 @@
         "type": "Categorical"
       },
       {
-        "name": "d3ebac9d32ce572ebbe2",
+        "name": "30c27c39e4d876ddde6f",
         "field": {
           "Aggregation": {
             "Expression": {
