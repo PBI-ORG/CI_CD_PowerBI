@@ -101,5 +101,139 @@ Once connected, your Power BI workspace will stay in sync with the chosen Azure 
 
 
 
+-----------------------------------------------------------------
+
+
+## ⚙️ Set up the necessary tools to manage the Repositories from Remote
+
+### 📥 Download and Install Visual Studio Code
+
+To work with this project, we recommend using [Visual Studio Code (VS Code)](https://code.visualstudio.com/), a free and powerful source-code editor.
+
+#### 🔽 Step 1: Download
+
+Visit the official Visual Studio Code website:
+
+👉 [https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+Click the **Download** button for your operating system
+
+#### 🛠️ Step 2: Install
+
+#### On Windows:
+1. Run the downloaded `.exe` file.
+2. Follow the setup instructions.
+3. ✅ Recommended: Select **"Add to PATH"** during installation.
+
+#### 🧩 Step 3: Install VS Code Extensions
+
+To enhance your development experience, it's recommended to install the following Visual Studio Code extensions:
+
+- **GitHub Pull Requests**  
+  Manage GitHub pull requests and issues directly from VS Code.
+
+- **GitHub Repositories**  
+  Browse and edit GitHub repositories without cloning them locally.
+
+- **Remote Repositories**  
+  Work with source code in GitHub repositories without needing to clone them to your machine.
+
+To install extensions:
+1. Open VS Code.
+2. Go to the **Extensions** view (`Ctrl+Shift+X` or `Cmd+Shift+X` on macOS).
+3. Search for each extension by name and click **Install**.
+
+
+### 🔧 Install Git
+
+Git is required to clone this repository and manage version control. Follow the steps below to install Git on your system.
+
+#### 🔽 Step 1: Download Git
+
+Visit the official Git website:
+
+👉 [https://git-scm.com/](https://git-scm.com/)
+
+Click the **Download** button for your operating system.
+
+
+#### 🛠️ Step 2: Install Git
+
+#### On Windows:
+1. Run the downloaded `.exe` file.
+2. Follow the installation wizard.
+3. ✅ Recommended: Keep default settings unless you have specific preferences.
+
+### 👤 Set Up Git Username and Email
+
+Before making commits, configure your Git identity:
+
+#### 📌 Run these commands in **Git Bash**:
+
+```bash
+git config --global user.name "Your Full Name"
+git config --global user.email "your.email@example.com"
+```
+---
+
+### 📂 Cloning the Repository Using Visual Studio Code
+
+You can easily clone a repository to your local machine using Visual Studio Code. Follow these steps:
+
+#### 🔗 Step 1: Copy the Repository URL
+
+1. Go to the AzureDevOps repository.
+2. Click the **Clone** button.
+
+   <img width="2290" height="213" alt="image" src="https://github.com/user-attachments/assets/0038e776-9cf4-4c50-8489-904d1e866171" />
+
+3. Copy the **HTTPS** URL or just click on **Clone in VS Code**
+
+
+#### 💻 Step 2: Open VS Code and Clone
+
+1. Open **Visual Studio Code**.
+2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS) to open the **Command Palette**.
+3. Type and select `Git: Clone`.
+4. Paste the repository URL you copied earlier and press **Enter**.
+5. Choose a folder on your computer where the repository will be saved.
+
+#### ✅ Step 3: Open the Project
+
+Once cloning is complete, VS Code will ask:
+
+> **"Would you like to open the cloned repository?"**
+
+Click **Open** to load the project in VS Code.
+
+---
+
+## 📂 Organizing Power BI Files in the Repository
+To enable smooth integration of Power BI reports in our CI/CD pipeline, we recommend saving your Power BI project files using the Power BI Project (PBIP) format. This format breaks down your report into structured, source-control-friendly JSON files alongside the dataset and report definitions.
+
+📌 Why Use .pbip?
+Easier to track changes with Git
+
+Enables code review and versioning for report definitions
+
+Supports better collaboration and CI/CD automation
+
+Avoids storing large binary .pbix files which aren't diff-friendly
+
+📥 How to Save as PBIP
+1. In Power BI Desktop (from version December 2022+), go to File → Save As
+
+2. Select Power BI Project Files (*.pbip)
+
+3. Choose your project folder within the repository (if applicable)
+
+##### ℹ️  If you don't have the option for saving a Power BI file as .Pbip you should enable the following options from Power BI desktop:
+
+![Pbip](https://github.com/user-attachments/assets/d1d9105b-1f48-48e4-84ac-a48d3e296388)
+
+---
+
+
+
 
 
