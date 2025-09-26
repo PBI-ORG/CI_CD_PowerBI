@@ -7,7 +7,7 @@ Implementing CI/CD for Power BI with Azure DevOps provides structure, collaborat
 To set up your CI/CD solution for Power BI, you’ll first need an **Azure DevOps Organization**. Follow these steps to create one for free:
 
 ### 1. Sign in with a Microsoft account
-- Go to [https://dev.azure.com](https://dev.azure.com)  
+- Go to [[https://dev.azure.com](https://aex.dev.azure.com/me?mkt=en-US)]  
 - Sign in using your Microsoft work account.
 
 ### 2. Create a new organization
