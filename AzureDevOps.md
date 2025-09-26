@@ -67,5 +67,39 @@ We recommend using three main branches to structure your development workflow in
 📌 In Azure DevOps, you can enforce branch policies (e.g., requiring pull requests, code reviews, or build validations) under **Project Settings > Repositories > Branches**. This ensures consistent quality and governance across your Power BI CI/CD pipeline.
 
 
+## 🔗 Connecting Azure DevOps to Power BI Workspaces
+
+We integrate Power BI with Azure DevOps to enable source control and versioned deployment of reports and datasets across three separate environments:
+
+- `Prod` workspace ⟶ `main` branch  
+- `Test` workspace ⟶ `test` branch  
+- `Dev` workspace ⟶ `dev` branch  
+
+---
+
+
+### ⚙️  Link Azure DevOps to Power BI
+
+1. In the Power BI service, navigate to the target workspace (e.g., `Dev`, `Test`, or `Prod`).  
+2. Go to **Workspace Settings** > **Git Integration**.
+3. Choose **Azure DevOps (Repos)** as the Git provider.
+4. Click **Connect**.
+
+   <img width="820" height="654" alt="image" src="https://github.com/user-attachments/assets/2109286d-b2d3-4c76-a8e5-58310211c379" />
+
+6. Provide the required details when prompted:  
+   - **Display Name**: a friendly name for the connection  
+   - **Repository URL**: the URL of your Azure DevOps repository (e.g., `https://dev.azure.com/<org>/<project>/_git/<repo>`)  
+   - **Branch**: select the appropriate branch (`dev`, `test`, or `main`)  
+   - **Personal Access Token**: paste the PAT you created in Step 1
+
+     <img width="783" height="784" alt="image" src="https://github.com/user-attachments/assets/1e057398-63a9-4754-8a0c-50794ba2f795" />
+ 
+7. Click **Connect and sync**.  
+
+Once connected, your Power BI workspace will stay in sync with the chosen Azure DevOps branch, enabling automated version control and structured deployments across environments.
+
+
+
 
 
