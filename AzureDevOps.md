@@ -88,10 +88,10 @@ We integrate Power BI with Azure DevOps to enable source control and versioned d
    <img width="820" height="654" alt="image" src="https://github.com/user-attachments/assets/2109286d-b2d3-4c76-a8e5-58310211c379" />
 
 6. Provide the required details when prompted:  
-   - **Display Name**: a friendly name for the connection  
-   - **Repository URL**: the URL of your Azure DevOps repository (e.g., `https://dev.azure.com/<org>/<project>/_git/<repo>`)  
-   - **Branch**: select the appropriate branch (`dev`, `test`, or `main`)  
-   - **Personal Access Token**: paste the PAT you created in Step 1
+   - **Organization**
+   - **Project** 
+   - **Git repository**  
+   - **Branch**: main,dev or test
 
      <img width="783" height="784" alt="image" src="https://github.com/user-attachments/assets/1e057398-63a9-4754-8a0c-50794ba2f795" />
  
