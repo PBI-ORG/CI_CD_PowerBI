@@ -8,7 +8,7 @@ To set up your CI/CD solution for Power BI, you’ll first need an **Azure DevOp
 
 ### 1. Sign in with a Microsoft account
 - Go to [https://dev.azure.com](https://dev.azure.com)  
-- Sign in using your Microsoft work/school account or a personal Microsoft account (e.g., Outlook, Hotmail).  
+- Sign in using your Microsoft work account.
 
 ### 2. Create a new organization
 - After signing in, select **New Organization**.  
