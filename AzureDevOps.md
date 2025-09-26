@@ -17,16 +17,22 @@ To set up your CI/CD solution for Power BI, you’ll first need an **Azure DevOp
 
 ### 3. Name your organization
 - Provide a unique name for your Azure DevOps Organization.  
-- Your organization will be accessible at a URL like:  
+- Your organization will be accessible at a URL like: URL: https://dev.azure.com/<OrganizationName>/ 
 
 ### 4. Create your first project
 - Once your organization is created, set up a project.  
-- Choose a **project name**, **visibility** (private or public), and **version control system** (Git recommended).  
+- Choose a **project name**, **visibility** (PRIVATE), and **version control system** (Git recommended).  
 - Click **Create Project**.  
 
 ### 5. Invite team members (optional)
 - Go to **Organization Settings > Users**.  
-- Add members by email and assign access levels (**Basic**, **Stakeholder**, etc.).  
+- Add members by email and assign access levels (**Basic**, **Stakeholder**, etc.).
+
+  <img width="852" height="925" alt="image" src="https://github.com/user-attachments/assets/984c4a76-66bb-40cc-ade6-68be41fffded" />
+
+  <img width="2568" height="408" alt="image" src="https://github.com/user-attachments/assets/d50f1d3e-6df7-4e15-97f4-10307c64d908" />
+
+
 
 ✅ You now have an **Azure DevOps Organization** ready to use for managing repositories, pipelines, and deploying your Power BI CI/CD solution.
 
