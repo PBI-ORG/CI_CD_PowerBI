@@ -36,5 +36,36 @@ To set up your CI/CD solution for Power BI, you’ll first need an **Azure DevOp
 
 ✅ You now have an **Azure DevOps Organization** ready to use for managing repositories, pipelines, and deploying your Power BI CI/CD solution.
 
+## 📦 How to Create a New Repository in Azure DevOps
+
+To create a new repository in your Azure DevOps organization, follow these steps:
+
+1. Go to [https://dev.azure.com](https://dev.azure.com) and sign in.  
+2. Select your **organization** and then choose your **project**.  
+3. In the left-hand menu, go to **Repos**.  
+4. Click the **dropdown next to the current repository name** and select **New Repository**.
+
+<img width="838" height="302" alt="image" src="https://github.com/user-attachments/assets/1bf9a733-ff00-44c7-815c-dc2bb5fe07a4" />
+
+   
+5. Enter a **repository name**.
+6. Optionally, check **Add a README** to initialize the repository.  
+7. Click **Create** to finish.  
+
+Your new repository will now be available under **Repos** in your Azure DevOps project.  
+
+---
+
+## 🌿 Branching Strategy
+
+We recommend using three main branches to structure your development workflow in Azure DevOps:
+
+- `main` – Production-ready code (default branch).  
+- `dev` – Ongoing development work.  
+- `test` – Integration testing before merging into `main`.  
+
+📌 In Azure DevOps, you can enforce branch policies (e.g., requiring pull requests, code reviews, or build validations) under **Project Settings > Repositories > Branches**. This ensures consistent quality and governance across your Power BI CI/CD pipeline.
+
+
 
 
