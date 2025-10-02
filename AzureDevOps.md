@@ -36,6 +36,66 @@ To set up your CI/CD solution for Power BI, you’ll first need an **Azure DevOp
 
 ✅ You now have an **Azure DevOps Organization** ready to use for managing repositories, pipelines, and deploying your Power BI CI/CD solution.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+# 🔐 Managing Repository-Level Access in Azure DevOps
+
+When working with multiple Power BI teams, each team should have access **only to the repositories and workspaces they own**.  
+This ensures isolation between teams while allowing project owners to retain visibility across everything.
+
+---
+
+## 1. Create a Team for Each Power BI Group
+1. In your Azure DevOps project, go to **Project Settings → Permissions**.  
+2. Click **New Group** and create a team for each Power BI group, for example:
+   - `TeamA-PowerBI`
+   - `TeamB-PowerBI`
+   - `TeamC-PowerBI`
+3. Add the appropriate users (or Azure AD security groups) to each team.
+
+---
+
+## 2. Configure Repository Permissions
+1. Navigate to **Repos → Files**.  
+2. From the dropdown, select the repository (e.g., `TeamA-PowerBI`).  
+3. Click the **“…” → Manage Repository → Security**.  
+4. Search for the team you created (`TeamA-PowerBI`) and assign:
+   - **Read** → Allow  
+   - **Contribute** → Allow  
+   - **Administer** → (Optional, if you want them to manage repo settings)  
+
+For other teams (e.g., `TeamB-PowerBI`, `TeamC-PowerBI`), explicitly set:  
+- **Read** → Deny  (we need to test this, If the team will be able to see the reposiroties just because they have access at the project level we need to create a project for eache team)
+
+This prevents them from seeing or accessing the repository.
+
+---
+
+## 3. Owner Access
+- **Project Administrators** (owners) automatically have full access to **all repositories** and can override permissions.  
+- This ensures central governance while maintaining team isolation.
+
+---
+
+## 4. Example Setup
+
+| Repository       | Team with Access | Other Teams   | Owner |
+|------------------|------------------|---------------|-------|
+| `TeamA-PowerBI`  | TeamA-PowerBI    | Denied        | Full  |
+| `TeamB-PowerBI`  | TeamB-PowerBI    | Denied        | Full  |
+| `TeamC-PowerBI`  | TeamC-PowerBI    | Denied        | Full  |
+
+---
+
+✅ **Result:**  
+- Each Power BI team can only see and work in their own repository.  
+- Project owners can see everything.  
+- CI/CD pipelines can still access all repos if configured with a service account.  
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
 ## 📦 How to Create a New Repository in Azure DevOps
 
 To create a new repository in your Azure DevOps organization, follow these steps:
