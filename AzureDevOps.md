@@ -297,7 +297,7 @@ Avoids storing large binary .pbix files which aren't diff-friendly
 📊 CI/CD PowerBI Git Branching Strategies
 
 Example with 3 branches:
-- Prod — live, production-ready state
+- main — live, production-ready state
 - Test — staging for QA and validation
 - Dev — active development
 
@@ -305,7 +305,7 @@ Example with 3 branches:
 
 🔀 Branching Flow:
 
-Dev → Test → Prod
+Dev → Test → Main
 
 - New features are developed in Dev.
 - Approved changes are moved to Test for QA.
@@ -337,11 +337,11 @@ git pull origin Test
 git merge Dev
 git push
 ```
-#### 📦 Move changes from Test to Prod (with merge):
+#### 📦 Move changes from Test to Main (with merge):
 
 ```bash
-git checkout Prod
-git pull origin Prod
+git checkout Main
+git pull origin Main
 git merge Test
 git push
 ```
@@ -374,10 +374,10 @@ git push
 ```
 
 
-#### 📦 Move changes from Test to Prod (linear rebase):
+#### 📦 Move changes from Test to Main (linear rebase):
 ```bash
--git checkout Prod
--git pull --rebase origin Prod
+-git checkout Main
+-git pull --rebase origin Main
 -git rebase Test
 -git push
 ```
@@ -485,7 +485,7 @@ Squash commit keeps history linear but we lose teh fine details of individual fe
 |:--------|:-----------------------------|:----------------------------|
 | Dev     | Active development       | Direct commits, squash, rebase |
 | Test    | Staging for QA/review    | git rebase Dev             |
-| Prod    | Live, stable production  | git rebase Test            |
+| Main    | Live, stable production  | git rebase Test            |
 
 ---
 
